@@ -9,6 +9,7 @@ import Particles from "./magicui/Particles";
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
 import PublicImage from "./PublicImage";
 // has to change
+
 const About = () => {
     const [opened, { open, close }] = useDisclosure(false);
     const btn =useMatches({
