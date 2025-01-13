@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
-import Experience from "./Experience";
 import Footer from "./Footer";
 import Header from "./Header"
 import { Loader } from "./Loader";
@@ -10,6 +9,8 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Social from "./Social";
 import { Toaster } from "react-hot-toast";
+import Education from "./Education";
+import CompetitiveProgramming from "./CompetitiveProgramming";
 
 const HomePage = () => {
     const [loading, setLoading] = useState(true);
@@ -25,7 +26,8 @@ const HomePage = () => {
         <About />
         <Projects />
         <Skills />
-        <Experience />
+        <Education />
+        <CompetitiveProgramming/>
         <Contact />
         <Footer/>
         <Mail />

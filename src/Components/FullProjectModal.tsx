@@ -1,4 +1,5 @@
 import { Badge, Button, Group, Image, Indicator, Modal, ScrollArea, Text, useMatches } from "@mantine/core";
+import PublicImage from "./PublicImage";
 
 const FullProjectModal = (props: any) => {
     const download=useMatches({xs:"xs", md:"sm", lg:"md", bs:"lg"});
@@ -12,7 +13,7 @@ const FullProjectModal = (props: any) => {
                 <Modal.CloseButton size="md" iconSize="30px" className="!bg-bgColor !text-red-500" />
             </Modal.Header>
             <Modal.Body className="!bg-bgColor xs-mx:!p-2 !pt-2 !border-primaryColor  !border-2 !border-t-0 !rounded-bl-3xl !rounded-br-3xl">
-                <Image
+                <PublicImage
                     className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA]"
                     src={props.image}
                     alt={props.image}

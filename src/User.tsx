@@ -1,114 +1,115 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin, IconBrandYoutube } from "@tabler/icons-react";
+import { IconBrandGithub , IconBrandLeetcode, IconBrandLinkedin } from "@tabler/icons-react";
 const Info = {
     name: "Pinak Gupta",
-    stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Freelancer", "Open Source Contributor"],
-    bio: "I'm a passionate software engineer specialized in crafting efficient and scalable solutions, deliver top-notch web applications, and provide freelance services that exceed client expectations. Let's connect and create something amazing together!"
+    stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Open Source Contributor"],
+    bio: "I am a passionate Computer Science undergraduate at Dr. B. R. Ambedkar National Institute of Technology Jalandhar (NIT Jalandhar), with a passion for becoming a software engineer. I'm eager to build scalable and impactful solutions, continuously improving through challenges and learning opportunities.Let's connect and create something amazing together!"
 }
-
-
 
 const ProjectInfo = [
     {
-        title: "Ekart E-comm App",
-        desc: "Ekart is a modern, fully responsive e-commerce platform built using React, TailwindCSS, Heroicons, and HeadlessUI, offering a seamless shopping experience across all devices. It features secure user authentication with login, registration, and logout functionalities. Users can add items to a wishlist or remove them, search for specific products, and add them to a shopping cart for purchase. The checkout process includes form validation for address and payment information, ensuring accuracy and security. After purchase, users can view their order history in the Orders section. Ekart combines robust functionality with a sleek, intuitive design, making online shopping effortless and enjoyable.",
-        image: "Ekart.png",
+        title: "EstateEase-Real Estate Platform",
+        desc: "EstateEase is a feature-rich real estate platform developed using the MERN stack. It streamlines the process of buying, selling, renting, and leasing residential and commercial properties. With user-friendly filters, clients can search for properties based on criteria like the number of bedrooms, bathrooms, and location. The platform enables direct communication with landlords through email, ensuring convenience and transparency. Its responsive design ensures seamless navigation across mobile and desktop devices, combining functionality with an intuitive user experience. EstateEase redefines property transactions, making them simple and efficient.",
+        image: "EstateEase.png",
         live: true,
-        technologies: ["React", "Tailwind", "Redux", "Heroicons", "HeadlessUI"],
-        link: "https://code-mars.github.io/Ekart/",
-        github: "https://github.com/Code-Mars/Ekart/"
+        technologies: ["MongoDB", "React.js", "Node.js", "Firebase"],
+        link: "https://estate-ease-up4y.onrender.com/",
+        github: "https://github.com/PinakGupta/mern-estate"
+    },    
+    {
+        title: "Chat-App",
+        desc: "Chat-App is a real-time messaging platform built with the MERN stack, featuring Socket.io for instant communication and styled with TailwindCSS and Daisy UI. It includes secure JWT-based authentication, real-time user status updates, and global state management using Zustand for a seamless chat experience.",
+        image: "ChatApp.png",
+        live: true,
+        technologies: ["MongoDB", "Socket.io", "React.js", "Node.js", "TailwindCSS", "Daisy UI", "Zustand"],
+        link: "https://chat-app-for-chatting.onrender.com/",
+        github: "https://github.com/PinakGupta/chat-app"
+    },    
+    {
+        title: "QuickBite",
+        desc: "QuickBite is a dynamic and user-friendly food delivery application built with the MERN stack, offering a seamless experience for ordering and managing meals. It features real-time updates for order tracking using Socket.io and an intuitive user interface styled with TailwindCSS. The platform incorporates secure authentication and authorization, optimized search and filtering for food items, and efficient global state management using Redux, ensuring a smooth and reliable user experience.",
+        image: "QuickBite.png",
+        live: false,
+        technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "TailwindCSS", "Redux"],
+        link: "https://github.com/PinakGupta/QuickBite-frontend",
+        github: "https://github.com/PinakGupta/QuickBite-frontend"
+    },    
+    {
+        title: "WhatsApp Chat Analyzer",
+        desc: "WhatsApp Chat Analyzer is a Python-based tool designed to provide insights into WhatsApp chat data. It leverages data visualization libraries like Matplotlib and Seaborn to present key metrics such as user activity, most common words, emoji usage, and more. The project is equipped with an intuitive interface built using Streamlit, enabling users to upload chat files, analyze conversations, and derive meaningful statistics with ease.",
+        image: "WhatsAppChatAnalyzer.png",
+        live: false,
+        technologies: ["Python", "Streamlit", "Matplotlib", "Seaborn", "Pandas"],
+        link: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser",
+        github: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser"
+    },    
+    {
+        title: "Movie Recommender System",
+        desc: "The Movie Recommender System is a robust application built to recommend movies to users based on their preferences using collaborative and content-based filtering techniques. The system is powered by Python, Pandas, and NumPy for data manipulation and Scikit-learn for implementing machine learning algorithms. With features like personalized recommendations, similarity analysis, and an intuitive interface, this project provides an engaging and user-centric movie exploration experience.",
+        image: "MovieRecommender.png",
+        live: false,
+        technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Streamlit"],
+        link: "https://github.com/PinakGupta/movie-recommender-system",
+        github: "https://github.com/PinakGupta/movie-recommender-system"
     },
     {
-        title: "Facebook Clone",
-        desc: "Facebook Clone is a full-stack web application that replicates the core features of Facebook, including user authentication, posting, and commenting. The front end is built with React, TailwinCSS, Tabler-Icons, Mantine and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, post updates, and comment on posts. The app features real-time updates, so users can see new comments as they are posted. Facebook Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Facebook.png",
+        title: "SkillPathFinder",
+        desc: "SkillPathFinder is an AI-powered career and skill recommendation platform designed to help users identify and pursue the most suitable skills and career paths. Built using the MERN stack, it leverages machine learning algorithms to analyze user input and provide personalized recommendations. The platform features a clean, responsive UI and tools for goal tracking and resource suggestions, empowering users to make informed decisions for their professional growth.",
+        image: "SkillPathFinder.png",
         live: false,
-        technologies: ["React", "Springboot", "MongoDB", "Tailwind", "Tabler-Icons", "Firebase"],
-        link: "https://github.com/Code-Mars/Facebook-Clone",
-        github: "https://github.com/Code-Mars/Facebook-Clone"
-    },
-    {
-        title: "Spotify Clone",
-        desc: "Spotify Clone is a full-stack web application that replicates the core features of Spotify, including user authentication, music playback, and playlist creation. The front end is built with React, TailwindCSS, Heroicons, and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, search for songs, and create playlists. The app features real-time updates, so users can see new songs as they are added. Spotify Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Spotify.png",
-        live: false,
-        technologies: ["React", "Springboot", "Tailwind", "Tabler-Icons", "MongoDB", "Firebase"],
-        link: "https://github.com/Code-Mars/Spotify-Clone",
-        github: "https://github.com/Code-Mars/Spotify-Clone"
-    },
-    {
-        title: "Travel Tracker",
-        desc: "Travel Tracker is a full-stack web application that allows users to track their travel experiences and share them with others. The front end is built with React, Bootstrap, while the back end uses Node.js, Express, and PostgresSQL. Users can create an account, log in, add new trips, and view their past trips on a map. The app features a clean, modern design with interactive maps and a user-friendly interface. Travel Tracker combines functionality with style, making it easy and enjoyable to record and share travel memories.",
-        image: "Travel.png",
-        live: false,
-        technologies: ["React", "Node.js", "PostgresSQL", "Express", "Bootstrap"],
-        link: "https://github.com/Code-Mars/Travel-Tracker",
-        github: "https://github.com/Code-Mars/Travel-Tracker"
-    },
-    {
-        title: "Instagram Clone",
-        desc: "Instagram Clone is a full-stack web application that replicates the core features of Instagram, including user authentication, image uploading, and commenting. The front end is built with React, TailwindCSS, and Heroicons, while the back end uses Firebase for user authentication and image storage. Users can create an account, log in, upload images, and comment on posts. The app features real-time updates, so users can see new comments as they are posted. Instagram Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
-        image: "Instagram.png",
-        live: false,
-        technologies: ["React", "Springboot", "Tailwind", "Heroicons", "Firebase", "MongoDB"],
-        link: "https://github.com/Code-Mars/Instagram-Clone",
-        github: "https://github.com/Code-Mars/Instagram-Clone"
-    },
-    {
-        title: "CodeX Code Editor",
-        desc: "CodeX is a modern, fully responsive code editor built using React, TailwindCSS, and Ace Editor, offering a seamless coding experience across all devices. It features syntax highlighting for popular programming languages, including HTML, CSS, JavaScript, Python, and Java. Users can create, edit, and save code files, with the option to download them as text files. CodeX combines robust functionality with a sleek, intuitive design, making coding effortless and enjoyable.",
-        image: "CodeX.png",
-        live: false,
-        technologies: ["React", "Tailwind", "Ace Editor"],
-        link: "https://github.com/Code-Mars/CodeX",
-        github: "https://github.com/Code-Mars/CodeX"
+        technologies: ["Scikit-learn","MongoDB", "Express.js", "React.js", "Node.js", "Python", , "TailwindCSS"],
+        link: "https://github.com/PinakGupta/SkillPathFinder",
+        github: "https://github.com/PinakGupta/SkillPathFinder"
     }
+    
+    
 ]
-
 
 const SkillInfo = [
     {
-        title: "Frontend",
-        skills: ["HTML", "CSS", "SASS", "JavaScript", "React JS", "Angular", "Redux", "Tailwind CSS", "GSAP", "Material UI", "Bootstrap"
+        title: "Web Development",
+        skills: [
+            "HTML", 
+            "CSS", 
+            "JavaScript", 
+            "React JS", 
+            "Redux", 
+            "Tailwind CSS", 
+            "Material UI", 
+            "Bootstrap", 
+            "Node JS", 
+            "Express JS", 
+            "MySQL", 
+            "MongoDB", 
+            "Firebase"
         ]
     },
     {
-        title: "Backend",
-        skills: ["Springboot", "Node JS", "Express JS", "MySQL", "MongoDB", "Firebase", "PostgresSQL"]
-    },
-    {
         title: "Languages",
-        skills: ["C", "C++", "Java", "JavaScript", "TypeScript"]
+        skills: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "SQL"]
     },
     {
         title: "Tools",
-        skills: ["Git", "Github", "VS Code", "Postman", "MongoDB Compass", "Spring Tool Suite"]
-    }
-]
-const socialLinks = [
-    { link: "https://github.com/Code-Mars", icon: IconBrandGithub },
-    { link: "https://www.linkedin.com/in/chandrabhan-maurya", icon: IconBrandLinkedin },
-    { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram }, 
-    { link: "https://www.youtube.com/channel/UC1ki6jaFvFiH_E79b9FYptw", icon: IconBrandYoutube },
-    { link: "https://www.leetcode.com/u/CodeMars", icon: IconBrandLeetcode }
-];
-
-
-const ExperienceInfo = [
-    {
-        role: "Specialist Programmer",
-        company: "Infosys",
-        date: "Oct 2023 - Present",
-        desc: "I led software development with Spring Boot, React, and Angular, creating scalable microservices and interfaces. I optimized performance by integrating frontend and backend, and enhanced security with RESTful APIs. Collaborating in agile teams, I fostered innovation and efficiency for top-quality solutions.",
-        skills: ["Springboot", "React JS", "Angular", "Node JS", "MySQL", "MongoDB", "Microservices"]
+        skills: ["Git", "GitHub", "VS Code", "Postman", "MongoDB Compass"]
     },
     {
-        role: "System Engineer",
-        company: "Infosys",
-        date: "Nov 2022 - Sep 2023",
-        desc: " I leveraged my skills in Java, Selenium, automation testing, and MySQL to design and implement automated testing frameworks, ensuring robust software validation. I optimized database performance and reliability, and collaborated with cross-functional teams to enhance system operations and ensure seamless integration.",
-        skills: ["Java", "MySQL", "Hibernate", "Selenium", "Jenkins", "JIRA", "Automation Testing"]
+        title: "Courses",
+        skills: [
+            "Data Structures and Algorithms (DSA)", 
+            "Object-Oriented Programming (OOPS)", 
+            "Database Management Systems (DBMS)", 
+            "Machine Learning", 
+            "Computer Networks (CN)", 
+            "Operating System (OS)"
+        ]
     }
-]
+];
+
+const socialLinks = [
+    { link: "https://github.com/PinakGupta", icon: IconBrandGithub },
+    { link: "https://www.linkedin.com/in/pinak-gupta-3a18b6273/", icon: IconBrandLinkedin },
+    { link: "https://leetcode.com/u/Pinak_Gupta/", icon: IconBrandLeetcode }
+];
+
 const Slugs = [
     "typescript",
     "spring",
@@ -147,4 +148,4 @@ const Slugs = [
     "sonarqube",
     "figma",
 ];
-export { Info, ProjectInfo,socialLinks, SkillInfo, ExperienceInfo, Slugs };
+export { Info, ProjectInfo,socialLinks, SkillInfo, Slugs };
