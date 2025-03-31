@@ -7,6 +7,24 @@ const Info = {
 
 const ProjectInfo = [
     {
+        "title": "Welth - AI Finance Platform",
+        "desc": "Welth is an innovative AI-powered finance platform designed to simplify money management. Easily track multiple accounts, manage transactions, and gain insightful analytics with visual charts. With automated transaction entry using Gemini AI and secure, intuitive features built with modern tech, Welth revolutionizes your financial journey.",
+        "image": "Welth.png",
+        "live": true,
+        "technologies": ["Next.js", "Supabase", "Tailwind CSS", "Prisma", "Gemini API"],
+        "link": "https://welth-ai-finance-platform-ls3y.vercel.app/",
+        "github": "https://github.com/PinakGupta/Welth---AI-Finance-Platform"
+    },
+    {
+        title: "QuickBite",
+        desc: "QuickBite is a dynamic and user-friendly food delivery application built with the MERN stack, offering a seamless experience for ordering and managing meals. It features real-time updates for order tracking using Socket.io and an intuitive user interface styled with TailwindCSS. The platform incorporates secure authentication and authorization, optimized search and filtering for food items, and efficient global state management using Redux, ensuring a smooth and reliable user experience.",
+        image: "QuickBite.png",
+        live: true,
+        technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "TailwindCSS", "Redux"],
+        link: "https://quickbite-frontend-1.onrender.com/",
+        github: "https://github.com/PinakGupta/QuickBite-frontend"
+    },   
+    {
         title: "EstateEase-Real Estate Platform",
         desc: "EstateEase is a feature-rich real estate platform developed using the MERN stack. It streamlines the process of buying, selling, renting, and leasing residential and commercial properties. With user-friendly filters, clients can search for properties based on criteria like the number of bedrooms, bathrooms, and location. The platform enables direct communication with landlords through email, ensuring convenience and transparency. Its responsive design ensures seamless navigation across mobile and desktop devices, combining functionality with an intuitive user experience. EstateEase redefines property transactions, making them simple and efficient.",
         image: "EstateEase.png",
@@ -14,7 +32,7 @@ const ProjectInfo = [
         technologies: ["MongoDB", "React.js", "Node.js", "Firebase"],
         link: "https://estate-ease-up4y.onrender.com/",
         github: "https://github.com/PinakGupta/mern-estate"
-    },    
+    },     
     {
         title: "Chat-App",
         desc: "Chat-App is a real-time messaging platform built with the MERN stack, featuring Socket.io for instant communication and styled with TailwindCSS and Daisy UI. It includes secure JWT-based authentication, real-time user status updates, and global state management using Zustand for a seamless chat experience.",
@@ -23,16 +41,7 @@ const ProjectInfo = [
         technologies: ["MongoDB", "Socket.io", "React.js", "Node.js", "TailwindCSS", "Daisy UI", "Zustand"],
         link: "https://chat-app-for-chatting.onrender.com/",
         github: "https://github.com/PinakGupta/chat-app"
-    },    
-    {
-        title: "QuickBite",
-        desc: "QuickBite is a dynamic and user-friendly food delivery application built with the MERN stack, offering a seamless experience for ordering and managing meals. It features real-time updates for order tracking using Socket.io and an intuitive user interface styled with TailwindCSS. The platform incorporates secure authentication and authorization, optimized search and filtering for food items, and efficient global state management using Redux, ensuring a smooth and reliable user experience.",
-        image: "QuickBite.png",
-        live: false,
-        technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "TailwindCSS", "Redux"],
-        link: "https://github.com/PinakGupta/QuickBite-frontend",
-        github: "https://github.com/PinakGupta/QuickBite-frontend"
-    },    
+    },        
     {
         title: "WhatsApp Chat Analyzer",
         desc: "WhatsApp Chat Analyzer is a Python-based tool designed to provide insights into WhatsApp chat data. It leverages data visualization libraries like Matplotlib and Seaborn to present key metrics such as user activity, most common words, emoji usage, and more. The project is equipped with an intuitive interface built using Streamlit, enabling users to upload chat files, analyze conversations, and derive meaningful statistics with ease.",
@@ -42,15 +51,6 @@ const ProjectInfo = [
         link: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser",
         github: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser"
     },    
-    {
-        title: "Movie Recommender System",
-        desc: "The Movie Recommender System is a robust application built to recommend movies to users based on their preferences using collaborative and content-based filtering techniques. The system is powered by Python, Pandas, and NumPy for data manipulation and Scikit-learn for implementing machine learning algorithms. With features like personalized recommendations, similarity analysis, and an intuitive interface, this project provides an engaging and user-centric movie exploration experience.",
-        image: "MovieRecommender.png",
-        live: false,
-        technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Streamlit"],
-        link: "https://github.com/PinakGupta/movie-recommender-system",
-        github: "https://github.com/PinakGupta/movie-recommender-system"
-    },
     {
         title: "SkillPathFinder",
         desc: "SkillPathFinder is an AI-powered career and skill recommendation platform designed to help users identify and pursue the most suitable skills and career paths. Built using the MERN stack, it leverages machine learning algorithms to analyze user input and provide personalized recommendations. The platform features a clean, responsive UI and tools for goal tracking and resource suggestions, empowering users to make informed decisions for their professional growth.",
