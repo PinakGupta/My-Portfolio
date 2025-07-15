@@ -7,6 +7,15 @@ const Info = {
 
 const ProjectInfo = [
     {
+        "title": "OneVote - Secure Voting Platform",
+        "desc": "OneVote is a highly secure and scalable MERN-based online voting system designed for institutions and organizations to conduct tamper-proof elections.",
+        "image": "one.png",
+        "live": true,
+        "technologies": ["Express.js", "Node.js", "React.js", "MongoDB", "TypeScript", "Redux Toolkit", "Resend"],
+        "link": "https://one-vote-sand.vercel.app/",
+        "github": "https://github.com/PinakGupta/One-Vote"
+        },
+    {
         "title": "Welth - AI Finance Platform",
         "desc": "Welth is an innovative AI-powered finance platform designed to simplify money management. Easily track multiple accounts, manage transactions, and gain insightful analytics with visual charts. With automated transaction entry using Gemini AI and secure, intuitive features built with modern tech, Welth revolutionizes your financial journey.",
         "image": "Welth.png",
@@ -41,16 +50,7 @@ const ProjectInfo = [
         technologies: ["MongoDB", "Socket.io", "React.js", "Node.js", "TailwindCSS", "Daisy UI", "Zustand"],
         link: "https://chat-app-for-chatting.onrender.com/",
         github: "https://github.com/PinakGupta/chat-app"
-    },        
-    {
-        title: "WhatsApp Chat Analyzer",
-        desc: "WhatsApp Chat Analyzer is a Python-based tool designed to provide insights into WhatsApp chat data. It leverages data visualization libraries like Matplotlib and Seaborn to present key metrics such as user activity, most common words, emoji usage, and more. The project is equipped with an intuitive interface built using Streamlit, enabling users to upload chat files, analyze conversations, and derive meaningful statistics with ease.",
-        image: "WhatsAppChatAnalyzer.png",
-        live: false,
-        technologies: ["Python", "Streamlit", "Matplotlib", "Seaborn", "Pandas"],
-        link: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser",
-        github: "https://github.com/PinakGupta/WhatsApp-Chat-Analyser"
-    },    
+    },            
     {
         title: "SkillPathFinder",
         desc: "SkillPathFinder is an AI-powered career and skill recommendation platform designed to help users identify and pursue the most suitable skills and career paths. Built using the MERN stack, it leverages machine learning algorithms to analyze user input and provide personalized recommendations. The platform features a clean, responsive UI and tools for goal tracking and resource suggestions, empowering users to make informed decisions for their professional growth.",

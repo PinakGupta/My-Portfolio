@@ -6,12 +6,12 @@ const achievements = [
     platform: "LeetCode",
     link: "https://leetcode.com/u/Pinak_Gupta/",
     description:
-      "Earned the prestigious Knight badge on LeetCode with a peak rating of 2056, successfully solving 900+ advanced algorithmic problems. Secured a top rank of 1050 among 35K+ participants in LeetCode Weekly Contest 401.",
+      "Earned the prestigious Guardian badge on LeetCode with a peak rating of 2143, successfully solving 1000+ algorithmic problems. Achieved a top rank of 685 among 30K+ participants in LeetCode Weekly Contest 457.",
     stats: [
-      { label: "Badge", value: "Knight" },
-      { label: "Peak Rating", value: "2056" },
-      { label: "Problems Solved", value: "900+" },
-      { label: "Rank", value: "1050 (Weekly Contest 401)" },
+      { label: "Badge", value: "Guardian" },
+      { label: "Peak Rating", value: "2143" },
+      { label: "Problems Solved", value: "1000+" },
+      { label: "Rank", value: "685 (Weekly Contest 457)" },
     ],
     logo: "leetcode.png",
   },
@@ -19,10 +19,10 @@ const achievements = [
     platform: "CodeChef",
     link: "https://www.codechef.com/users/coder_guptaji",
     description:
-      "4-Star programmer on CodeChef 2 with a maximum rating of 1847. Achieved a remarkable rank of 85 in Starters 171 (Division 2), demonstrating advanced problem-solving capabilities.",
+      "4⭐ programmer on CodeChef with a maximum rating of 1949. Secured an impressive rank of 85 in Starters 171 (Division 2), highlighting strong competitive-programming skills.",
     stats: [
-      { label: "Rating", value: "1847 (4⭐)" },
-      { label: "Best Rank", value: "85 (Starters 171, Div 2)" },
+      { label: "Rating", value: "1949 (4⭐)" },
+      { label: "Best Rank", value: "85 (Starters 171, Div2)" },
     ],
     logo: "codechef.png",
   },
@@ -30,11 +30,11 @@ const achievements = [
     platform: "Codeforces",
     link: "https://codeforces.com/profile/coder_guptaji",
     description:
-      "Attained Specialist status on Codeforces 2 with a peak rating of 1553. Ranked 1192 in Codeforces Round 1002 (Div. 2), showcasing algorithmic proficiency and speed.",
+      "Achieved Expert status on Codeforces with a peak rating of 1667. Ranked 1192 in Codeforces Round 1002 (Div.2), showcasing algorithmic proficiency and speed.",
     stats: [
-      { label: "Status", value: "Specialist" },
-      { label: "Peak Rating", value: "1553" },
-      { label: "Rank", value: "1192 (Round 1002, Div 2)" },
+      { label: "Status", value: "Expert" },
+      { label: "Peak Rating", value: "1667" },
+      { label: "Rank", value: "1192 (Round 1002, Div2)" },
     ],
     logo: "codeforces.png",
   },

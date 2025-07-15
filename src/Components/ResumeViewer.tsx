@@ -18,7 +18,7 @@ const ResumeViewer = (props: any) => {
     });
 
     // Get the correct path for the PDF file
-    const pdfUrl = process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/Resume.pdf` : '/Resume.pdf';
+    const pdfUrl = process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/Pinak_Gupta_SDE.pdf` : '/Pinak_Gupta_SDE.pdf';
 
     const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
         setNumPages(numPages);
