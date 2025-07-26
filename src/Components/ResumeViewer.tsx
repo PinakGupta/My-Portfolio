@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Info } from "../User";
 
 // Set up the PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const ResumeViewer = (props: any) => {
     const [numPages, setNumPages] = useState<number | null>(null);

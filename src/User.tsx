@@ -1,9 +1,28 @@
 import { IconBrandGithub , IconBrandLeetcode, IconBrandLinkedin } from "@tabler/icons-react";
+
 const Info = {
     name: "Pinak Gupta",
     stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer", "Open Source Contributor"],
     bio: "I am a passionate Computer Science undergraduate at Dr. B. R. Ambedkar National Institute of Technology Jalandhar (NIT Jalandhar), with a passion for becoming a software engineer. I'm eager to build scalable and impactful solutions, continuously improving through challenges and learning opportunities.Let's connect and create something amazing together!"
 }
+
+const ExperienceInfo = [
+    {
+        role: "Research Intern",
+        company: "Indian Institute of Technology, Mandi",
+        duration: "Jun 2025 - Jul 2025",
+        location: "Mandi, Himachal Pradesh, India",
+        type: "On-site",
+        description: [
+            "Developed autonomous ball-hitting system using Kinova Gen3 robotic arm with racket for tennis ball hitting.",
+            "Fine-tuned YOLO11 model for real-time yellow tennis ball detection achieving 99.5% mAP@0.5 accuracy.",
+            "Designed 3D ball trajectory prediction system using Kalman Filters and physics-based modeling with Depth Anything v2 Vision Transformer model (97.5M parameters).",
+            "Trained end-to-end reinforcement learning agent using Proximal Policy Optimization (PPO) in MuJoCo simulation environment enabling successful ball interception and striking behavior."
+        ],
+        skills: ["PyTorch", "Computer Vision", "Reinforcement Learning", "Object Detection", "Deep Learning", "YOLO", "Kalman Filters", "MuJoCo", "Robotics"],
+        logo: "iit_mandi_logo" // You'll need to add this image to your public folder
+    }
+];
 
 const ProjectInfo = [
     {
@@ -56,13 +75,11 @@ const ProjectInfo = [
         desc: "SkillPathFinder is an AI-powered career and skill recommendation platform designed to help users identify and pursue the most suitable skills and career paths. Built using the MERN stack, it leverages machine learning algorithms to analyze user input and provide personalized recommendations. The platform features a clean, responsive UI and tools for goal tracking and resource suggestions, empowering users to make informed decisions for their professional growth.",
         image: "SkillPathFinder.png",
         live: false,
-        technologies: ["Scikit-learn","MongoDB", "Express.js", "React.js", "Node.js", "Python", , "TailwindCSS"],
+        technologies: ["Scikit-learn","MongoDB", "Express.js", "React.js", "Node.js", "Python", "TailwindCSS"],
         link: "https://github.com/PinakGupta/SkillPathFinder",
         github: "https://github.com/PinakGupta/SkillPathFinder"
     }
-    
-    
-]
+];
 
 const SkillInfo = [
     {
@@ -148,4 +165,5 @@ const Slugs = [
     "sonarqube",
     "figma",
 ];
-export { Info, ProjectInfo,socialLinks, SkillInfo, Slugs };
+
+export { Info, ProjectInfo, ExperienceInfo, socialLinks, SkillInfo, Slugs };

@@ -46,9 +46,16 @@ const CompetitiveProgramming = () => {
       className="px-16 mx-20 md-mx:px-6 sm-mx:px-2 lg-mx:mx-0 my-10 mb-28 font-mono"
       id="CompetitiveProgramming"
     >
-      <h1 className="text-4xl sm-mx:text-3xl xs-mx:text-2xl mb-10 font-bold text-center text-white">
-        <span className="text-primaryColor">05.&nbsp;</span>Competitive Programming
-      </h1>
+      {/* Section Header */}
+      <div className="text-center mb-16">
+        <h1 className="text-4xl sm-mx:text-3xl xs-mx:text-2xl font-bold text-white mb-4">
+          <span className="text-primaryColor">05.&nbsp;</span>Competitive Programming
+        </h1>
+        <div className="w-24 h-1 bg-primaryColor mx-auto rounded-full mb-4"></div>
+        <p className="text-textColor text-lg md-mx:text-base sm-mx:text-sm max-w-2xl mx-auto">
+          Achievements and rankings across major competitive programming platforms
+        </p>
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {achievements.map((achievement, index) => (
@@ -56,54 +63,60 @@ const CompetitiveProgramming = () => {
             key={index}
             data-aos="fade-up"
             data-aos-duration="800"
-            className="flex flex-col border shadow-[0_0_15px_0_#64FFDA50] hover:-translate-y-2 transition transform duration-300 ease-in-out gap-4 p-6 rounded-2xl bg-bgColor border-primaryColor"
+            data-aos-delay={index * 200}
+            className="flex flex-col border shadow-[0_0_15px_0_#64FFDA50] hover:shadow-[0_0_25px_0_#64FFDA70] hover:-translate-y-3 transition-all duration-500 ease-in-out gap-4 p-6 rounded-2xl bg-bgColor/50 backdrop-blur-sm border-primaryColor/60 hover:border-primaryColor group"
           >
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-4 items-center">
-                <PublicImage
-                  src={achievement.logo}
-                  alt={achievement.platform}
-                  className="w-16 h-16 rounded-full"
-                />
-                <h2 className="text-2xl font-semibold text-white">{achievement.platform}</h2>
+            <div className="flex flex-col gap-3">
+              <div className="flex gap-4 items-center mb-2">
+                <div className="relative">
+                  <PublicImage
+                    src={achievement.logo}
+                    alt={achievement.platform}
+                    className="w-16 h-16 rounded-full group-hover:scale-110 transition-transform duration-300"
+                  />
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-primaryColor/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                </div>
+                <h2 className="text-2xl font-semibold text-white group-hover:text-primaryColor transition-colors duration-300">
+                  {achievement.platform}
+                </h2>
               </div>
               
-              {/* Sparkling View Profile Button */}
+              {/* Enhanced View Profile Button */}
               <a
                 href={achievement.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative inline-block bg-bgColor text-white px-6 py-2 rounded-lg overflow-hidden group w-fit ml-2"
+                className="relative inline-block bg-bgColor text-white px-6 py-3 rounded-lg overflow-hidden group/btn w-fit border border-primaryColor/40 hover:border-primaryColor transition-all duration-300"
               >
-                {/* Sparkling border animation */}
-                <span className="absolute inset-0 border-2 border-primaryColor rounded-lg"></span>
+                {/* Animated background */}
+                <span className="absolute inset-0 bg-gradient-to-r from-primaryColor/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
                 
-                {/* Sparkle effect that moves around the border */}
+                {/* Moving sparkle effect */}
                 <span className="absolute inset-0 flex">
-                  <span className="h-full w-1/6 bg-gradient-to-r from-transparent via-primaryColor to-transparent opacity-30 animate-sparkle-horizontal"></span>
-                </span>
-                <span className="absolute inset-0 flex flex-col">
-                  <span className="h-1/6 w-full bg-gradient-to-b from-transparent via-primaryColor to-transparent opacity-30 animate-sparkle-vertical"></span>
+                  <span className="h-full w-1/6 bg-gradient-to-r from-transparent via-primaryColor/40 to-transparent opacity-0 group-hover/btn:opacity-100 group-hover/btn:animate-pulse"></span>
                 </span>
                 
-                {/* Button text with light background for readability */}
-                <span className="relative text-sm font-medium z-10 text-primaryColor">
-                  View Profile
+                {/* Button text */}
+                <span className="relative text-sm font-medium z-10 text-primaryColor group-hover/btn:text-white transition-colors duration-300">
+                  View Profile →
                 </span>
               </a>
             </div>
             
-            <p className="text-textColor leading-6 text-justify">
+            <p className="text-textColor leading-6 text-justify group-hover:text-white/90 transition-colors duration-300">
               {achievement.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               {achievement.stats.map((stat, i) => (
                 <div
                   key={i}
-                  className="border border-primaryColor text-white px-4 py-2 rounded-lg bg-opacity-30 bg-primaryColor text-sm font-medium"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 200 + i * 100}
+                  className="border border-primaryColor/60 hover:border-primaryColor text-white px-4 py-2 rounded-lg bg-primaryColor/10 hover:bg-primaryColor/20 text-sm font-medium transition-all duration-300 hover:scale-105"
                 >
-                  <span className="font-bold">{stat.label}: </span>
-                  {stat.value}
+                  <span className="font-bold text-primaryColor">{stat.label}: </span>
+                  <span className="text-white">{stat.value}</span>
                 </div>
               ))}
             </div>
@@ -113,34 +126,5 @@ const CompetitiveProgramming = () => {
     </div>
   );
 };
-
-// Add these animation styles to your global CSS file
-const globalStyles = `
-@keyframes sparkleHorizontal {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(200%);
-  }
-}
-
-@keyframes sparkleVertical {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(200%);
-  }
-}
-
-.animate-sparkle-horizontal {
-  animation: sparkleHorizontal 2s infinite linear;
-}
-
-.animate-sparkle-vertical {
-  animation: sparkleVertical 2s infinite linear;
-}
-`;
 
 export default CompetitiveProgramming;
